@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(232, 19%, 15%);
+  display: grid;
+  place-content: center;
+}
+.social-dashboard {
+  height: 35vh;
+  background-color: hsl(228, 12%, 44%, 0.09);
+  color: white;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+}
+hr {
+  display: none;
+}
+.darkmode {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.container-one {
+  height: 50%;
+  width: 63vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  place-content: center;
+  column-gap: 20px;
+  position: relative;
+  bottom: 80px;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.follow {
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: small;
+  letter-spacing: 3px;
+}
+.grid-item h1 {
+  font-size: 3em;
+}
+.grid-item .image-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.grid-item img {
+  display: flex;
+  justify-content: center;
+}
+
+.facbook {
+  border-top: 6px solid hsl(208, 92%, 53%);
+}
+.twitter {
+  border-top: 6px solid hsl(203, 89%, 53%);
+}
+.instagram {
+  border-top: 6px solid hsl(329, 70%, 58%);
+  height: 180px;
+  background-color: hsl(234, 16%, 23%);
+  border-radius: 5px;
+  box-shadow: 0 0px 8px 0 hsl(234, 16%, 23%);
+}
+.youtube {
+  border-top: 6px solid hsl(348, 97%, 39%);
+}
+.facbook,
+.twitter,
+.youtube {
+  height: 180px;
+  background-color: hsl(234, 16%, 23%);
+  border-radius: 5px;
+  box-shadow: 0 0px 8px 0 hsl(234, 16%, 23%);
+}
+
+/* ? this is the biggining of container two */
+.container-two {
+  width: 78vw;
+  position: relative;
+  bottom: 50px;
+  left: 250px;
+}
+/* ! this is the biggining of the second grid */
+
+.second-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 20px;
+  place-content: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  background-color: hsl(234, 16%, 23%);
+  height: 100px;
+  box-shadow: 0 0px 8px 0 hsl(234, 16%, 23%);
+}
+
+.grid-item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.percent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+}
+.percent img {
+  position: relative;
+  bottom: 3px;
+}
+.red {
+  color: red;
+  font-size: small;
+  font-weight: bold;
+}
+.green {
+  color: green;
+  font-size: small;
+  font-weight: bold;
+}
+
+.tcontainer {
+  width: 40px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: rgb(32, 31, 31);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin: 1px;
+  cursor: pointer;
+}
+.hr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+
+  .social-dashboard {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    flex-direction: column;
+    height: 230px;
+    padding: 20px;
+    width: 100vw;
+  }
+  .hr-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  hr {
+    display: inline;
+  }
+
+  .container-one {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .first-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    place-content: center;
+    row-gap: 20px;
+  }
+
+  /* ? this is the biggining of container two */
+  .container-two {
+    width: 78vw;
+    position: relative;
+    bottom: 50px;
+    left: 0;
+  }
+  /* ! this is the biggining of the second grid */
+
+  .second-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-gap: 20px;
+    place-content: center;
+    position: relative;
+    bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+
+  .social-dashboard {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    flex-direction: column;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .container-one {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 40px 10px 0px;
+  }
+
+  .first-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    place-content: center;
+    row-gap: 20px;
+  }
+
+  /* ? this is the biggining of container two */
+  .container-two {
+    width: 78vw;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+  }
+  /* ! this is the biggining of the second grid */
+
+  .second-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 20px;
+    place-content: center;
+    position: relative;
+    bottom: 30px;
+  }
+}
